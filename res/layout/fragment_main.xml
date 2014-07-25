@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.resursosmultimedia.MainActivity$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:id="@+id/c_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <Switch
+            android:id="@+id/type_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:textOff="Audio"
+            android:textOn="Video" />
+
+        <ImageButton
+            android:id="@+id/btRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_camera"
+            android:layout_toRightOf="@id/type_record"
+            android:layout_marginLeft="3sp" />
+
+        <ImageButton
+            android:id="@+id/btStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btRec"
+            android:src="@android:drawable/ic_media_pause" />
+
+        <ImageButton
+            android:id="@+id/btPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btStop"
+            android:src="@android:drawable/ic_media_play" />
+        <ImageButton 
+            android:id="@+id/btPlayStream"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/btPlay"
+            android:src="@android:drawable/ic_menu_mapmode"
+            android:layout_marginLeft="40sp"/>
+    </RelativeLayout>
+
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="250sp"
+        android:layout_height="250sp"
+        android:layout_below="@id/c_buttons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp" >
+    </SurfaceView>
+
+</RelativeLayout>
