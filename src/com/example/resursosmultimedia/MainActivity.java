@@ -5,8 +5,6 @@ import java.io.IOException;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.content.Intent;
-import android.graphics.PixelFormat;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
@@ -27,6 +25,13 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ImageButton;
 import android.widget.Switch;
 
+/**
+ * Esta es una clase que permite crear y reproducir archivos multimedia (audio y video)
+ * utilizando los objetos MediaRecorder y MediaPlayer.
+ * @author Edwin A. Taborda, Juan P. Noreña
+ * @version 25/07/2014
+ *
+ */
 public class MainActivity extends Activity {
 
 	@Override
@@ -59,7 +64,7 @@ public class MainActivity extends Activity {
 		private SurfaceView surface;
 		private SurfaceHolder holder;
 		private String videoUrl = "https://archive.org/download/TutoriavjvjjvewatToStudyAfterCompletingBasicJava/Lect%205%20-a-hello-world-program.mp4";
-		
+				
 		public PlaceholderFragment() {
 		}
 
